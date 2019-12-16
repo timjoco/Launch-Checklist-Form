@@ -39,7 +39,7 @@ window.addEventListener("load", function(){
                copilotStatus.innerHTML = `Co-Pilot Name: ${copilotName.value}`;
                };           
 
-      if (fuelLevel.value < 10000) {
+      if (fuelLevel.value <= 10000) {
          const fuelStatus = document.getElementById("fuelStatus");
          const launchStatus = document.getElementById("launchStatus");       
          fuelStatus.innerHTML = "There is not enough fuel for the journey.";
@@ -62,6 +62,3 @@ window.addEventListener("load", function(){
 
 
 
-/* This block of code shows how to format the HTML once you fetch some planetary JSON!
-
-*/
